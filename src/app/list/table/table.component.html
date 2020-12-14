@@ -1,0 +1,23 @@
+<table>
+  <tbody>
+    <tr
+      *ngFor="let meeting of meetingList"
+    >
+      <td>
+        <a [routerLink]="['/meetings', meeting.id]">
+          {{ meeting.id }}
+        </a>
+      </td>
+      <td>
+        <a [routerLink]="['/meetings', meeting.id]">
+          {{ meeting.description }}
+        </a>
+      </td>
+      <td>
+        <a [routerLink]="['/meetings', meeting.id]">
+          {{ meeting.password }}
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
